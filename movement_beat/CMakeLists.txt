@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( movement_beat )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( movement_beat movement_beat.cpp )
+target_link_libraries( movement_beat ${OpenCV_LIBS} )
